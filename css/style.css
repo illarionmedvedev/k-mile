@@ -1,0 +1,183 @@
+@font-face {
+    font-family: WorkSans; /* Имя шрифта */
+    src: url(../fonts/WorkSans-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+body{
+    overflow-x: hidden;
+    font-family: WorkSans;
+}
+#chartdiv {
+position: relative;
+  width: 100%;
+  height: 500px;
+}	
+#map {
+        height: 400px;
+        width: 100%;
+       }
+.my-heading{
+    font-size: 24px;
+    font-weight: 100;
+    color: #004b93 !important;
+    position: initial;
+    text-transform: uppercase;
+}
+.my-link{
+    font-family: 'Work Sans', Arial;
+    font-size: 15px;
+    font-weight: normal;
+    color: #303133 !important;
+    text-transform: uppercase;
+}
+.my-link:hover{
+font-weight:600;
+}
+.navbar-light .navbar-nav .nav-link {
+    /* color: rgba(0,0,0,.5); */
+}
+.navbar-light {
+box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.75);
+    z-index: 9999;
+    }
+@media (max-width: 768px){
+    .contact_paragraph{
+        margin-top: 30px;
+    }
+    .site_logo{
+        height: 32px !important;
+    }
+    #chartdiv{
+        height: 250px !important;
+    }
+    table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+}
+th { 
+  color: white; 
+  font-weight: bold; 
+}
+.opa, th,.opa2 { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, .opa, tr,.opa2 { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	.opa { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50% !important;
+	}
+	
+	.opa:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    .opa2 { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50% !important;
+	}
+	
+	.opa2:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	.opa:nth-of-type(1):before { content: "Number of Aircraft"; }
+	.opa:nth-of-type(2):before { content: "Nationality"; }
+	.opa:nth-of-type(3):before { content: "Registration"; }
+	.opa:nth-of-type(4):before { content: "Freighter Type"; }
+    
+    .opa2:nth-of-type(1):before { content: "Position"; }
+	.opa2:nth-of-type(2):before { content: "Location"; }
+	.opa2:nth-of-type(3):before { content: "Open"; }
+}
+.slider_title{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    z-index: 999;
+}
+.overlayer{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.6
+}
+p{
+    font-size: 15px !important;
+}
+li{
+    font-size: 15px !important;
+}
+.contact_links{
+
+    color: #004b93 !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+.list_style{
+    background-color: #105491;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    padding-left: 20px;
+    list-style: none;
+}
+.theaded{
+    background-color: #105491;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+}
+.space{
+    height: 60px;
+}
+.inner-scrooll{
+    height: 500px;
+}

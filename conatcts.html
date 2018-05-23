@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>K-mile Asia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/route.js"></script>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="main_navbar">
+          <a href="index.html"><img src="img/KMile-(1).png" style="   height: 60px;
+    margin-right: 10px;" class="site_logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item">
+               <a class="nav-link" href="" > </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="index.html" >About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="aircraft.html">Our Aircraft</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link my-link" href="conatcts.html" style="font-weight:600;">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-10 offset-md-1" style="margin-top:76px;">
+    <br>
+    <div class="row">
+            <div class="col-md-6">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-6 contact_paragraph">
+        <p>
+            K-Mile Air Company Limited,<br>
+
+Room 308-309, 3rd Floor, B-FZ Building,<br>
+Suvarnabhumi Airport, No. 999, Moo 7, Racha Thewa,<br>
+Bang Phli, Samutprakan 10540 Thailand<br>
+Tel: +66 2134 2600 Fax: +66 2134 2601
+        </p>
+        
+        <p>
+            For commercial inquiries, please contact:<br>
+
+            Mr. Stefan Oechsner <a href="mailto:Stefan.O@k-mile.com" class="contact_links">Stefan.O@k-mile.com</a><br>
+
+            Mr. Suvit Chutanopmanee <a href="mailto:Suvit.C@k-mile.com" class="contact_links">Suvit.C@k-mile.com</a>
+        </p>
+        </div>
+    </div>
+    </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 13.709734, lng: 100.752773};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9gWD_72Ni7dADmhwdVGJjc3ES5ihHxOQ&callback=initMap">
+    </script>
+</body>
+</html>
